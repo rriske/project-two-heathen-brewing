@@ -1,6 +1,130 @@
+header {
+	background-color:#000;
+	text-align:center;
+	margin:auto;
+	width:100%;
+	padding-top:35px;
+	padding-bottom:20px;
+}
+
+nav li {
+	display:inline-block;
+	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:20px;
+	color:#000;
+	text-align:center;
+}
+
+nav ul {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-column-gap:30px;
+	margin:auto;
+	width:80%;
+	padding-top:13px;
+	padding-bottom:13px;
+	border-bottom:black solid 1px;
+}
+
+a {
+	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:18px;
+	color:#000;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+a:hover {
+	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:18px;
+	color:#FFF;
+	font-style:italic;
+	background-color:#F2A304;
+	text-transform:uppercase;
+	padding:5px;
+	text-decoration:none;
+}
+
+.current {
+  	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:18px;
+	color:#FFF;
+	font-style:italic;
+	background-color:#F2A304;
+	text-transform:uppercase;
+	padding:5px;
+	text-decoration:none;
+}
+
+h1 {
+	font-family: "Vollkorn";
+	font-weight: 900;
+	font-size:48px;
+	text-transform: uppercase;
+	color:#FFF;
+}
+
+h2 {
+
+}
+
+h3 {
+	font-family: "Vollkorn";
+	font-weight: 700;
+	font-size:20px;
+	color:#000;
+}
+
+h4 {
+	font-family:"Open Sans";
+	font-weight:600;
+	font-size:16px;
+	line-height:20px;
+}
+
+h5 {
+	font-family: "Vollkorn";
+	font-weight:700;
+	font-size:34px;
+	text-transform:uppercase;
+	color:#FFF;
+}
+
+h6 {
+	font-family:"Vollkorn";
+	font-weight:700;
+	font-size:18px;
+	text-transform:uppercase;
+	padding-top:40px;
+	text-align:center;
+	padding-bottom:18px;
+}
+
+p {
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+}
+
+.hours {
+	text-align:center;
+	padding-bottom:35px;
+}
+
+main {
+	width:80%;
+	margin:auto;
+}
+
 .logo {
-	min-height:40%;
-	max-height:80%;
+	width:200px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
 .accordion {
@@ -12,10 +136,10 @@
   text-align: left;
   border: 1px solid;
   outline: none;
-  transition: 0.4s;
+  transition: 0.5s;
   font-family:"Vollkorn";
   font-weight:700;
-  font-size:36px;
+  font-size:34px;
   text-transform:uppercase;
 }
 
@@ -26,12 +150,14 @@
 .panel {
   padding: 0 18px;
   background-color: white;
+  max-height:0;
   display: none;
+  transition:max-height 0.5s ease-out;
   overflow: hidden;
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: ">";
   font-size: 13px;
   color: #777;
   float: right;
@@ -39,7 +165,7 @@
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "^";
 }
 
 footer {
@@ -63,8 +189,3 @@ footer {
 		background-color:limegreen;
 	}
 }
-/*
-font-family: 'Mansalva', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Indie Flower', cursive;
-*/

@@ -37,10 +37,5 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
-
-
-
-
 // End of Your Code . Don't delete that line below!!
 });

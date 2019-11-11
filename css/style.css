@@ -65,6 +65,13 @@ main {
 	margin:auto;
 }
 
+.about {
+	text-align:center;
+}
+
+.slideshow {
+}
+
 h1 {
 	font-family: "Vollkorn";
 	font-weight: 900;
@@ -74,7 +81,12 @@ h1 {
 }
 
 h2 {
-
+	font-family:"Vollkorn";
+	font-weight:700;
+	text-transform:uppercase;
+	color:#000;
+	font-size:38px;
+	text-align:center;
 }
 
 h3 {
@@ -109,11 +121,30 @@ h6 {
 	padding-bottom:18px;
 }
 
+strong {
+	font-family: "Vollkorn";
+	font-weight:700;
+	font-size:48px;
+	text-transform:uppercase;
+	color:#000;
+	text-align:center;
+}
+
 p {
 	font-family:"Open Sans";
 	font-weight:400;
 	font-size:15px;
 	line-height:20px;
+	text-align:left;
+}
+
+.index {
+	margin:auto;
+	width:80%;
+}
+
+article {
+	text-align:left;
 }
 
 .hours {
@@ -143,6 +174,8 @@ main {
   display: none;
   transition:max-height 0.5s ease-out;
   overflow: hidden;
+  border:2px solid;
+  border-color:#F2A304;
 }
 
 .accordion:after {
@@ -157,8 +190,40 @@ main {
   content: "^";
 }
 
+button {
+	color:#FFF;
+	font-family: "Vollkorn";
+	font-weight:700;
+	font-size:22px;
+	text-transform:uppercase;
+	background-image: url(../images/lightgrain.png);
+	width:300px;
+	padding:12px;
+	text-align:center;
+	margin:auto;
+}
+
+button:hover {
+	background-color:#FFF;
+}
+
 footer {
 	background-color:#000;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width:100%;
+}
+
+.socials {
+	width:44px;
+}
+
+.location {
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	color:#FFF;
 }
 
 @media only screen and (min-width:768px) {

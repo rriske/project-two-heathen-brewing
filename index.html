@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
+	<header class="slideshow">
 		<img src="images/productset.png">
 		<img src="images/kegcarry.png">
 		<img src="images/burgerclose.png">
@@ -18,46 +18,47 @@
 
 	<nav>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html" class="current">Home</a></li>
 			<li><a href="menu.html">The Pub</a></li>
 			<li><a href="#">The Brewery</a></li>
-			<li><a href="#">The Estate</a></li>
 			<li><a href="#">Selection</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main class="index">
 		<section>
-			<h5>Heathen Brewing</h5>
-			<img src="images/heathen-tiki.png" class="logo">
-			<h1>The Brewery</h1>
+			<div class="about">
+			<img src="images/heathen-tiki.png" class="logo"><br>
+			<strong>Heathen Brewing</strong><br></div>
 			<p>Created from the soul of home brewing. The realization that we as a people want to break the corporate strong hold on the beer industry and get back to using local ingredients in small craft batch brewing has demanded the formation of Heathen Brewing.
 			At Heathen Brewing we make small batches of “Progressive Ales for the Promiscuous Palate”. It all begins with fresh, high quality ingredients and that means sourcing those ingredients from those in our community. The freedom to create seasonal and experimental beer will allow Heathen Brewing to truly test the palate of our community.
 			The Heathen way will move quickly towards the new hops and malts that are being introduced as science, technology and the American spirit create new versions of classic recipes. This forward thinking will create new and unique recipes that will tantalize the tongues of the Heathen Faithful. Through the love of travel and the appreciation of different cultures many beer recipes can now be formed or re-born 10 barrels at a time.</p>
-			<button>See More</button>
+			<div class="about"><a href="#"><button>See More</button></a></div>
 		</section>
 		<section>
-			<img src="images/patio.png">
-			<h1>The Pub</h1>
+			<div class="about"><img src="images/patio.png">
+			<h2>The Pub</h2></div>
 			<p>Features outdoor seating in our lovely patio, growlers to go, full menu, and banquet room.</p>
-			<button>See More</button>
+			<div class="about"><a href="menu.html"><button>See More</button></a></div>
 	</main>
 	<footer>
-		<a href="https://www.instagram.com/heathenbrewing/" target="blank"><img src="images/instalogo.png"></a>
-		<a href="https://www.facebook.com/Heathenbrewing/" target="blank"><img src="images/facelogo.png"></a>
-		<a href="https://www.yelp.com/biz/heathen-brewing-vancouver?osq=heathen+brewing" target="blank"><img src="images/yelplogo.png"></a>
-		<section>
-			The Pub<br>
+		<section class="location">
+			<p>The Pub<br>
 			Feral Public House<br>
 			1109 Washington Street<br>
 			Vancouver, WA 98660<br>
-			(360) 836-5255
+			(360) 836-5255</p>
 		</section>
-		<section>
-			The Brewery<br>
+		<section class="location">
+			<p>The Brewery<br>
 			Heathen Brewing<br>
 			5612 NE 119th Street<br>
 			Vancouver, WA 98686<br>
-			(360) 601-7454
+			(360) 601-7454</p>
+		</section>
+		<section>
+			<a href="https://www.instagram.com/heathenbrewing/" target="blank"><img src="images/instalogo.png" class="socials"></a>
+			<a href="https://www.facebook.com/Heathenbrewing/" target="blank"><img src="images/facelogo.png" class="socials"></a>
+			<a href="https://www.yelp.com/biz/heathen-brewing-vancouver?osq=heathen+brewing" target="blank"><img src="images/yelplogo.png" class="socials"></a>
 		</section>
 	</footer>
 	<!-- link for jquery -->

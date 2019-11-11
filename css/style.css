@@ -60,6 +60,11 @@ a:hover {
 	text-decoration:none;
 }
 
+main {
+	padding-bottom:150px;
+	margin:auto;
+}
+
 h1 {
 	font-family: "Vollkorn";
 	font-weight: 900;
@@ -127,22 +132,6 @@ main {
 	padding-bottom:20px;
 }
 
-.accordion {
-  background-image: url(../images/lightgrain.png);
-  color: #FFF;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: 1px solid;
-  outline: none;
-  transition: 0.5s;
-  font-family:"Vollkorn";
-  font-weight:700;
-  font-size:34px;
-  text-transform:uppercase;
-}
-
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -173,19 +162,71 @@ footer {
 }
 
 @media only screen and (min-width:768px) {
-	main {
-		background-color:skyblue;
+	.accordion {
+		  background-image: url(../images/lightgrain.png);
+		  color: #FFF;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  text-align: left;
+		  border: 1px solid;
+		  outline: none;
+		  transition: 0.5s;
+		  font-family:"Vollkorn";
+		  font-weight:700;
+		  font-size:25px;
+		  text-transform:uppercase;
 	}
 }
 
 @media only screen and (min-width:1024px) {
-	main {
-		background-color:salmon;
-		}
+	.accordion {
+		  background-image: url(../images/lightgrain.png);
+		  color: #FFF;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  text-align: left;
+		  border: 1px solid;
+		  outline: none;
+		  transition: 0.5s;
+		  font-family:"Vollkorn";
+		  font-weight:700;
+		  font-size:30px;
+		  text-transform:uppercase;
+	}
 }
 
 @media only screen and (min-width:1200px) {
-	main {
-		background-color:limegreen;
+	.accordion {
+		  background-image: url(../images/lightgrain.png);
+		  color: #FFF;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  text-align: left;
+		  border: 1px solid;
+		  outline: none;
+		  transition: 0.5s;
+		  font-family:"Vollkorn";
+		  font-weight:700;
+		  font-size:35px;
+		  text-transform:uppercase;
 	}
+}
+
+/*.accordion {
+  background-image: url(../images/lightgrain.png);
+  color: #FFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid;
+  outline: none;
+  transition: 0.5s;
+  font-family:"Vollkorn";
+  font-weight:700;
+  font-size:34px;
+  text-transform:uppercase;
 }

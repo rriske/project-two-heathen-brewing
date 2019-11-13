@@ -1,6 +1,22 @@
 // your script file for adding your own jquery
 $(function() {
 // Your Code from here on down. Don't delete that line above!
+
+$('.slideshow').square1({
+  animation: 'slide',
+  transition_time: 3000,
+  prev_next_nav: 'none',
+  dots_nav: 'inside',
+});
+
+$('.slideshow-brew').square1({
+  animation: 'slide',
+  transition_time: 3000,
+  prev_next_nav: 'none',
+  dots_nav: 'inside',
+});
+
+
   var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -59,13 +75,6 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
-
-$(".slideshow").square1({
-  animation: "slide",
-  transition_time: 2000,
-  prev_next_nav: "none",
-  dots_nav: "inside"
 }
 
 

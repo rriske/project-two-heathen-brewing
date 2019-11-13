@@ -70,6 +70,10 @@ main {
 }
 
 .slideshow {
+	margin: auto;
+	outline: none;
+	width:100%;
+	background-color:#000;
 }
 
 h1 {

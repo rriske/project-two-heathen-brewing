@@ -61,6 +61,16 @@ window.onclick = function(event) {
   }
 }
 
+$(".slideshow").square1({
+  animation: "slide",
+  transition_time: 2000,
+  prev_next_nav: "none",
+  dots_nav: "inside"
+}
+
+
+
+
 
 // End of Your Code . Don't delete that line below!!
 });

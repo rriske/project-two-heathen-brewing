@@ -129,7 +129,7 @@ h2 {
 	color:#000;
 	font-size:38px;
 	text-align:center;
-	padding-bottom:40px;
+	/*padding-bottom:40px;*/
 }
 
 h3 {
@@ -164,6 +164,16 @@ h6 {
 	padding-top:40px;
 	text-align:center;
 	padding-bottom:18px;
+}
+
+.alt {
+	font-family:"Vollkorn";
+	font-weight:700;
+	text-transform:uppercase;
+	color:#000;
+	font-size:38px;
+	text-align:center;
+	padding-bottom:40px;
 }
 
 br {
@@ -222,6 +232,48 @@ article {
 main {
 	width:80%;
 	margin:auto;
+}
+
+.growl {
+	width:50%;
+	margin:auto;
+}
+
+.modal-header {
+	width:100%;
+	background-color:#F2A304;
+	color:#FFF;
+	text-align:left;
+}
+
+.modal-header h2 {
+	font-family:"Vollkorn";
+	font-weight:700;
+	text-transform:uppercase;
+	color:#FFF;
+	font-size:38px;
+	text-align:left;
+}
+
+.modal-body {
+	padding-top:10px;
+	width:100%;
+	margin:auto;
+}
+
+/*.modehead {
+	color:#FFF;
+	font-family:"Vollkorn";
+	font-weight:400;
+	font-style:italic;
+	font-size:20px;
+}*/
+
+.sizing {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	margin:auto;
+	width:100%;
 }
 
 .amenities {
@@ -339,16 +391,16 @@ footer {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #FFF;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+	margin:20% auto;
+	background-color: #FFF;
+	border: 1.5px solid #F2A304;
+	padding-bottom:20px;
+	width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #FFF;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -360,8 +412,6 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 @media only screen and (min-width:768px) {
 	.accordion {
@@ -378,6 +428,16 @@ footer {
 		  font-weight:700;
 		  font-size:25px;
 		  text-transform:uppercase;
+	}
+
+	.tap {
+		padding-top:30px;
+		width:80%;
+		margin:auto;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-gap:5px;
 	}
 }
 
@@ -397,6 +457,16 @@ footer {
 		  font-size:30px;
 		  text-transform:uppercase;
 	}
+
+	.tap {
+		padding-top:30px;
+		width:80%;
+		margin:auto;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+		grid-gap:5px;
+	}
 }
 
 @media only screen and (min-width:1200px) {
@@ -414,6 +484,16 @@ footer {
 		  font-weight:700;
 		  font-size:35px;
 		  text-transform:uppercase;
+	}
+
+	.tap {
+		padding-top:30px;
+		width:80%;
+		margin:auto;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows:1fr 1fr 1fr 1fr;
+		grid-gap:5px;
 	}
 }
 

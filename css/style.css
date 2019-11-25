@@ -138,13 +138,14 @@ h3 {
 	font-size:20px;
 	color:#000;
 	text-transform:uppercase;
+	padding-bottom:5px;
 }
 
 h4 {
 	font-family:"Open Sans";
 	font-weight:600;
 	font-size:16px;
-	line-height:20px;
+	line-height:23px;
 }
 
 h5 {
@@ -165,6 +166,14 @@ h6 {
 	padding-bottom:18px;
 }
 
+br {
+	padding:5px;
+}
+
+aside {
+	padding-bottom:25px;
+}
+
 strong {
 	font-family: "Vollkorn";
 	font-weight:700;
@@ -175,6 +184,14 @@ strong {
 }
 
 p {
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	text-align:left;
+}
+
+ul {
 	font-family:"Open Sans";
 	font-weight:400;
 	font-size:15px;
@@ -228,7 +245,7 @@ main {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 25px 18px;
   background-color: white;
   display: none;
   transition:max-height 0.5s ease-out;

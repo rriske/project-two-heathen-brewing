@@ -307,15 +307,18 @@ main {
 }
 
 .accordion:after {
-  content: ">";
-  font-size: 13px;
-  color: #777;
+  content: "+";
+  font-size: 30px;
+  color: #FFF;
   float: right;
-  margin-left: 5px;
+  z-index:5;
 }
 
 .active:after {
-  content: "^";
+  content: "-";
+  z-index:5;
+  color:#FFF;
+  font-size:30px;
 }
 
 button {

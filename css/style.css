@@ -7,16 +7,16 @@ header {
 	padding-bottom:20px;
 }
 
-nav li {
+/*#navbar a {
 	display:inline-block;
 	font-family:"Vollkorn";
 	font-weight:400;
 	font-size:20px;
 	color:#000;
 	text-align:center;
-}
+}*/
 
-nav ul {
+#navbar {
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	grid-column-gap:30px;
@@ -25,21 +25,42 @@ nav ul {
 	padding-top:13px;
 	padding-bottom:13px;
 	border-bottom:black solid 1px;
+	text-align:center;
+	font-weight:400;
+	font-family:"Vollkorn";
+	font-size:20px;
+	background-color:#FFF;
+	z-index:5;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+  margin:auto;
+}
+
+.sticky + .content {
+  width:80%;
+  margin:auto;
+  padding:10px;
 }
 
 a {
+	display:inline-block;
 	font-family:"Vollkorn";
 	font-weight:400;
-	font-size:18px;
+	font-size:20px;
 	color:#000;
 	text-transform:uppercase;
 	text-decoration:none;
+	padding:5px;
 }
 
 a:hover {
 	font-family:"Vollkorn";
 	font-weight:400;
-	font-size:18px;
+	font-size:20px;
 	color:#FFF;
 	font-style:italic;
 	background-color:#F2A304;
@@ -48,10 +69,10 @@ a:hover {
 	text-decoration:none;
 }
 
-.current {
+#current {
   	font-family:"Vollkorn";
 	font-weight:400;
-	font-size:18px;
+	font-size:20px;
 	color:#FFF;
 	font-style:italic;
 	background-color:#F2A304;
@@ -67,6 +88,14 @@ main {
 
 .about {
 	text-align:center;
+	padding-top:45px;
+	padding-bottom:45px;
+}
+
+br {
+	line-height:40px;
+	font-family:"Vollkorn";
+	font-weight:400;
 }
 
 .slideshow {
@@ -100,6 +129,7 @@ h2 {
 	color:#000;
 	font-size:38px;
 	text-align:center;
+	padding-bottom:40px;
 }
 
 h3 {
@@ -107,6 +137,7 @@ h3 {
 	font-weight: 700;
 	font-size:20px;
 	color:#000;
+	text-transform:uppercase;
 }
 
 h4 {
@@ -176,6 +207,16 @@ main {
 	margin:auto;
 }
 
+.amenities {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align:left;
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+}
+
 .logo {
 	width:200px;
 	padding-top:20px;
@@ -225,11 +266,17 @@ button:hover {
 	background-color:#FFF;
 }
 
+.patio {
+	min-width:30%;
+	max-width:70%;
+}
+
 footer {
 	background-color:#000;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	width:100%;
+	padding:15px 30px;
 }
 
 .socials {
@@ -242,6 +289,8 @@ footer {
 	font-size:15px;
 	line-height:20px;
 	color:#FFF;
+	margin:auto;
+	width:80%;
 }
 
 .selection {

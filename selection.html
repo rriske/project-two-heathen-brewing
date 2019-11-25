@@ -15,14 +15,12 @@
 		<img src="images/heathen-tiki.png" class="logo">
 		<h1>Heathen Brewery</h1>
 	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="menu.html">The Pub</a></li>
-			<li><a href="brewery.html" class="current">The Brewery</a></li>
-			<li><a href="selection.html">Selection</a></li>
-		</ul>
-	</nav>
+	<div id="navbar">
+		<a href="index.html">Home</a>
+		<a href="menu.html">The Pub</a>
+		<a href="brewery.html">The Brewery</a>
+		<a href="selection.html" id="current">Selection</a>
+	</div>
 	<main>
 		<!-- Trigger/Open The Modal -->
 		<button class="selection" id="myBtn">Transcend IPA</button>
@@ -425,7 +423,7 @@
 		<!-- link for jquery -->
 		<script>
 			// Get the modal
-var modal = document.getElementById("myModal");
+			var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -435,22 +433,40 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+	modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+	modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
 }
 </script>
-		<!-- link for your script file -->
-		<script src="scripts/script.js"></script>
-	</body>
-	</html>
+<script>
+	window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
+</script>
+<!-- link for your script file -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

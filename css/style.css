@@ -369,10 +369,15 @@ footer {
 	font-size:27px;
 	font-style:italic;
 	color:#FFF;
-	width:180px;
-	height:180px;
 	text-align:left;
 	line-height:25px;
+	text-transform:uppercase;
+	background-image:none;
+	background-color:none;
+	margin:auto;
+	width:180px;
+	height:180px;
+	background-image:url(../images/lightgrain.png);
 }
 
 /* The Modal (background) */

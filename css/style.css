@@ -7,36 +7,6 @@ header {
 	padding-bottom:20px;
 }
 
-#navbar {
-	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-column-gap:30px;
-	margin:auto;
-	width:80%;
-	padding-top:13px;
-	padding-bottom:13px;
-	border-bottom:black solid 1px;
-	text-align:center;
-	font-weight:400;
-	font-family:"Vollkorn";
-	font-size:20px;
-	background-color:#FFF;
-	z-index:5;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 80%;
-  margin:auto;
-}
-
-.sticky + .content {
-  width:80%;
-  margin:auto;
-  padding:10px;
-}
-
 a {
 	display:inline-block;
 	font-family:"Vollkorn";
@@ -191,7 +161,7 @@ p {
 	font-size:15px;
 	line-height:20px;
 	text-align:left;
-	width:88%;
+	width:100%;
 	margin:auto;
 }
 
@@ -381,7 +351,7 @@ footer {
 	width:44px;
 }
 
-address {
+.location {
 	font-family:"Open Sans";
 	font-weight:400;
 	font-size:15px;
@@ -486,6 +456,36 @@ address {
 		width:100%;
 		margin:auto;
 	}
+
+	#navbar {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-column-gap:30px;
+		margin:auto;
+		width:100%;
+		padding-top:13px;
+		padding-bottom:13px;
+		border-bottom:black solid 1px;
+		text-align:center;
+		font-weight:400;
+		font-family:"Vollkorn";
+		font-size:20px;
+		background-color:#FFF;
+		z-index:5;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		margin:auto;
+	}
+
+	.sticky + .content {
+		width:100%;
+		margin:auto;
+		padding:10px;
+	}
 }
 
 @media only screen and (min-width:1024px) {
@@ -525,6 +525,36 @@ address {
 	.padcol {
 		padding-top:45px;
 	}
+
+	#navbar {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-column-gap:30px;
+		margin:auto;
+		width:90%;
+		padding-top:13px;
+		padding-bottom:13px;
+		border-bottom:black solid 1px;
+		text-align:center;
+		font-weight:400;
+		font-family:"Vollkorn";
+		font-size:20px;
+		background-color:#FFF;
+		z-index:5;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 90%;
+		margin:auto;
+	}
+
+	.sticky + .content {
+		width:90%;
+		margin:auto;
+		padding:10px;
+	}
 }
 
 @media only screen and (min-width:1200px) {
@@ -563,5 +593,35 @@ address {
 
 	.padcol {
 		padding-top:45px;
+	}
+
+	#navbar {
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-column-gap:30px;
+		margin:auto;
+		width:88%;
+		padding-top:13px;
+		padding-bottom:13px;
+		border-bottom:black solid 1px;
+		text-align:center;
+		font-weight:400;
+		font-family:"Vollkorn";
+		font-size:20px;
+		background-color:#FFF;
+		z-index:5;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 88%;
+		margin:auto;
+	}
+
+	.sticky + .content {
+		width:88%;
+		margin:auto;
+		padding:10px;
 	}
 }

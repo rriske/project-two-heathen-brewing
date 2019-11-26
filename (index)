@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Heathen Brewing</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Vollkorn:400,400i,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+	body {
+		margin:auto;
+		text-align:center;
+	}
+</style>
+<body>
+	<h1>Heathen Brewing</h1><br>
+	<img src="images/bltiki.png"><br>
+	<button>Take Me There</button>
+</body>
+	</html>

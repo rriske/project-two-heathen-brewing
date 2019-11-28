@@ -219,24 +219,37 @@ main {
 }
 
 .modal-header {
-	width:100%;
 	background-color:#F2A304;
 	color:#FFF;
 	text-align:left;
-}
-
-.modal-header h2 {
 	font-family:"Vollkorn";
 	font-weight:700;
 	text-transform:uppercase;
 	color:#FFF;
-	font-size:38px;
+	font-size:26px;
 	text-align:left;
+	padding-left:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.modal-header em {
+	font-family:"Vollkorn";
+	font-weight:600;
+	text-transform:uppercase;
+	color:#FFF;
+	font-style:italic;
+	font-size:20px;
+	text-align:left;
+	padding-bottom:5px;
+	padding-left:13px;
 }
 
 .modal-body {
 	padding-top:10px;
-	width:100%;
+	padding-left:18px;
+	margin-right:20px;
+	width:90%
 	margin:auto;
 }
 

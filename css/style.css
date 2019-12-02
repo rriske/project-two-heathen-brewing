@@ -7,86 +7,10 @@ header {
 	padding-bottom:20px;
 }
 
-a {
-	display:inline-block;
-	font-family:"Vollkorn";
-	font-weight:400;
-	font-size:20px;
-	color:#000;
-	text-transform:uppercase;
-	text-decoration:none;
-	padding:5px;
-}
-
-#navbar a:hover {
-	font-family:"Vollkorn";
-	font-weight:400;
-	font-size:20px;
-	color:#FFF;
-	font-style:italic;
-	background-color:#F2A304;
-	text-transform:uppercase;
-	padding:5px;
-	text-decoration:none;
-}
-
-#current {
-  	font-family:"Vollkorn";
-	font-weight:400;
-	font-size:20px;
-	color:#FFF;
-	font-style:italic;
-	background-color:#F2A304;
-	text-transform:uppercase;
-	padding:5px;
-	text-decoration:none;
-}
-
 main {
-	padding-bottom:150px;
+	width:85%;
 	margin:auto;
-}
-
-.about {
-	text-align:center;
-	padding-top:45px;
-	padding-bottom:45px;
-	width:80%;
-	margin:auto;
-	background-color:#FFF;
-}
-
-br {
-	line-height:40px;
-	font-family:"Vollkorn";
-	font-weight:400;
-}
-
-.slideshow {
-	margin: auto;
-	outline: none;
-	width:100%;
-	height:500px;
-	background-color:#000;
-}
-
-.slideshow-brew {
-	margin: auto;
-	outline: none;
-	width:70%;
-	height:400px;
-	background-color:#FFF;
-}
-
-.centered {
-	width:80%;
-	margin:auto;
-	padding:15px 5px;
-}
-
-form {
-	padding-bottom: 15px;
-	padding-top:10px;
+	padding-bottom:75px;
 }
 
 h1 {
@@ -139,17 +63,79 @@ h6 {
 	padding-bottom:18px;
 }
 
-.alt {
+a {
+	display:inline-block;
 	font-family:"Vollkorn";
-	font-weight:700;
-	text-transform:uppercase;
+	font-weight:400;
+	font-size:20px;
 	color:#000;
-	font-size:38px;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:5px;
+}
+
+p {
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	text-align:left;
+	width:100%;
+	margin:auto;
+}
+
+button {
+	color:#FFF;
+	font-family: "Vollkorn";
+	font-weight:700;
+	font-size:22px;
+	text-transform:uppercase;
+	background-image: url(../images/lightgrain.png);
+	width:300px;
+	padding:12px;
 	text-align:center;
-	padding-bottom:40px;
+	margin:auto;
+}
+
+button:hover {
+	color:#F2A304;
+	font-family: "Vollkorn";
+	font-weight:700;
+	font-size:22px;
+	text-transform:uppercase;
+}
+
+form {
+	padding-bottom: 15px;
+	padding-top:10px;
+}
+
+hr {
+	border:0.5px solid;
+	border-color:#000;
+	width:80%;
+}
+
+article {
+	text-align:left;
+}
+
+ul {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	text-align:left;
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	grid-gap:15px;
+	padding-right:20px;
 }
 
 br {
+	line-height:40px;
+	font-family:"Vollkorn";
+	font-weight:400;
 	padding:5px;
 }
 
@@ -166,22 +152,81 @@ strong {
 	text-align:center;
 }
 
-p {
-	font-family:"Open Sans";
-	font-weight:400;
-	font-size:15px;
-	line-height:20px;
-	text-align:left;
+footer {
+	background-color:#000;
 	width:100%;
 	margin:auto;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding:20px 0;
 }
 
-ul {
-	font-family:"Open Sans";
+/*Navigation for all pages*/
+#navbar a:hover {
+	font-family:"Vollkorn";
 	font-weight:400;
-	font-size:15px;
-	line-height:20px;
-	text-align:left;
+	font-size:20px;
+	color:#FFF;
+	font-style:italic;
+	background-color:#F2A304;
+	text-transform:uppercase;
+	padding:5px;
+	text-decoration:none;
+}
+
+#current {
+  	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:20px;
+	color:#FFF;
+	font-style:italic;
+	background-color:#F2A304;
+	text-transform:uppercase;
+	padding:5px;
+	text-decoration:none;
+}
+
+/*Index styles*/
+.slideshow {
+	margin: auto;
+	outline: none;
+	width:100%;
+	height:500px;
+	background-color:#000;
+}
+
+.about {
+	text-align:center;
+	padding-top:45px;
+	padding-bottom:45px;
+	width:80%;
+	margin:auto;
+	background-color:#FFF;
+}
+
+.slideshow-brew {
+	margin: auto;
+	outline: none;
+	width:70%;
+	height:400px;
+	background-color:#FFF;
+}
+
+.hide {display: none;}
+.centered {
+	width:80%;
+	margin:auto;
+	padding:15px 5px;
+}
+
+.alt {
+	font-family:"Vollkorn";
+	font-weight:700;
+	text-transform:uppercase;
+	color:#000;
+	font-size:38px;
+	text-align:center;
+	padding-bottom:40px;
 }
 
 .index {
@@ -189,18 +234,6 @@ ul {
 	width:85%;
 	background-color:#FFF;
 }
-
-
-hr {
-	border:0.5px solid;
-	border-color:#000;
-	width:80%;
-}
-
-article {
-	text-align:left;
-}
-
 .hours {
 	width:320px;
 	margin:auto;
@@ -218,11 +251,6 @@ article {
 	font-weight:400;
 	font-size:15px;
 	line-height:20px;
-}
-
-main {
-	width:85%;
-	margin:auto;
 }
 
 .growl {
@@ -261,35 +289,14 @@ main {
 	padding-top:10px;
 	padding-left:18px;
 	margin-right:20px;
-	width:90%
 	margin:auto;
 }
-
-/*.modehead {
-	color:#FFF;
-	font-family:"Vollkorn";
-	font-weight:400;
-	font-style:italic;
-	font-size:20px;
-}*/
 
 .sizing {
 	display:grid;
 	grid-template-columns:1fr 1fr;
 	margin:auto;
 	width:100%;
-}
-
-ul {
-	display:grid;
-	grid-template-columns:1fr 1fr;
-	text-align:left;
-	font-family:"Open Sans";
-	font-weight:400;
-	font-size:15px;
-	line-height:20px;
-	grid-gap:15px;
-	padding-right:20px;
 }
 
 .logo {
@@ -341,39 +348,9 @@ ul {
   font-size:30px;
 }
 
-button {
-	color:#FFF;
-	font-family: "Vollkorn";
-	font-weight:700;
-	font-size:22px;
-	text-transform:uppercase;
-	background-image: url(../images/lightgrain.png);
-	width:300px;
-	padding:12px;
-	text-align:center;
-	margin:auto;
-}
-
-button:hover {
-	color:#F2A304;
-	font-family: "Vollkorn";
-	font-weight:700;
-	font-size:22px;
-	text-transform:uppercase;
-}
-
 .patio {
 	min-width:30%;
 	max-width:70%;
-}
-
-footer {
-	background-color:#000;
-	width:100%;
-	margin:auto;
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding:20px 0;
 }
 
 .socials {
@@ -477,7 +454,7 @@ footer {
 
 	.menu {
 		display:grid;
-		grid-template-columns:1fr
+		grid-template-columns:1fr;
 		width:100%;
 		margin:auto;
 	}

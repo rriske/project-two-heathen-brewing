@@ -2,11 +2,16 @@
 $(function() {
 // Your Code from here on down. Don't delete that line above!
 
+$('.close').click(function(){
+  $('#this.dataset.modal').css('display', 'none')
+});
+
 $('.slideshow').square1({
   animation: 'slide',
   transition_time: 3000,
   prev_next_nav: 'none',
   dots_nav: 'inside',
+  caption: 'none',
 });
 
 $('.slideshow-brew').square1({
@@ -14,6 +19,7 @@ $('.slideshow-brew').square1({
   transition_time: 3000,
   prev_next_nav: 'none',
   dots_nav: 'inside',
+  caption: 'none',
 });
 
 var acc = document.getElementsByClassName("accordion");

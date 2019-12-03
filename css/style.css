@@ -195,6 +195,12 @@ footer {
 	background-color:#000;
 }
 
+.index {
+	margin:auto;
+	width:85%;
+	background-color:#FFF;
+}
+
 .about {
 	text-align:center;
 	padding-top:45px;
@@ -204,19 +210,20 @@ footer {
 	background-color:#FFF;
 }
 
-.slideshow-brew {
-	margin: auto;
-	outline: none;
-	width:70%;
-	height:400px;
-	background-color:#FFF;
+.logo {
+	width:200px;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
-.hide {display: none;}
-.centered {
-	width:80%;
-	margin:auto;
-	padding:15px 5px;
+.logo:hover {
+	transform:scale(1.5) rotate(30deg);
+	transition:all .5s ease-in-out;
+}
+
+.patio {
+	min-width:30%;
+	max-width:70%;
 }
 
 .alt {
@@ -229,11 +236,24 @@ footer {
 	padding-bottom:40px;
 }
 
-.index {
+.location {
+	font-family:"Open Sans";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	color:#FFF;
 	margin:auto;
-	width:85%;
-	background-color:#FFF;
 }
+
+.socials {
+	width:44px;
+}
+
+/*Pub styles*/
+.leftcol {
+	margin-top:45px;
+}
+
 .hours {
 	width:320px;
 	margin:auto;
@@ -253,9 +273,76 @@ footer {
 	line-height:20px;
 }
 
-.growl {
-	width:50%;
+.email {
+	font-family:"Vollkorn";
+	font-weight:400;
+	font-size:15px;
+	line-height:20px;
+	text-align:center;
+}
+
+.centered {
+	width:80%;
 	margin:auto;
+	padding:15px 5px;
+}
+
+.active, .accordion:hover {
+  color:#F2A304;
+}
+
+.panel {
+ 	padding: 25px 18px;
+ 	background-color: white;
+	display: none;
+	transition:max-height 0.5s ease-out;
+	overflow: hidden;
+ 	border:3px solid;
+ 	border-color:#000;
+}
+
+.accordion:after {
+  content: "+";
+  font-size: 30px;
+  color: #FFF;
+  float: right;
+  z-index:5;
+}
+
+.active:after {
+  content: "-";
+  z-index:5;
+  color:#FFF;
+  font-size:30px;
+}
+
+.tacos {
+	padding:10px;
+	border:2px solid #F2A304;
+}
+
+/*Brewery styles*/
+.slideshow-brew {
+	margin: auto;
+	outline: none;
+	width:70%;
+	height:400px;
+	background-color:#FFF;
+}
+
+/*Selection styles*/
+.selection {
+	font-family:"Vollkorn";
+	font-weight:600;
+	font-size:23px;
+	font-style:italic;
+	color:#FFF;
+	text-align:left;
+	line-height:25px;
+	text-transform:uppercase;
+	margin:auto;
+	width:180px;
+	height:180px;
 }
 
 .modal-header {
@@ -299,131 +386,48 @@ footer {
 	width:100%;
 }
 
-.logo {
-	width:200px;
-	padding-top:20px;
-	padding-bottom:20px;
+.growl {
+	width:50%;
+	margin:auto;
 }
 
-.logo:hover {
-	transform:scale(1.5) rotate(30deg);
-	transition:all .5s ease-in-out;
-}
-
-.tacos {
-	padding:10px;
-	border:2px solid #F2A304;
-}
-
-.leftcol {
-	margin-top:45px;
-}
-
-.active, .accordion:hover {
-  color:#F2A304;
-}
-
-.panel {
- 	padding: 25px 18px;
- 	background-color: white;
+.hide {
 	display: none;
-	transition:max-height 0.5s ease-out;
-	overflow: hidden;
- 	border:3px solid;
- 	border-color:#000;
 }
 
-.accordion:after {
-  content: "+";
-  font-size: 30px;
-  color: #FFF;
-  float: right;
-  z-index:5;
-}
-
-.active:after {
-  content: "-";
-  z-index:5;
-  color:#FFF;
-  font-size:30px;
-}
-
-.patio {
-	min-width:30%;
-	max-width:70%;
-}
-
-.socials {
-	width:44px;
-}
-
-.location {
-	font-family:"Open Sans";
-	font-weight:400;
-	font-size:15px;
-	line-height:20px;
-	color:#FFF;
-	margin:auto;
-}
-
-.email {
-	font-family:"Vollkorn";
-	font-weight:400;
-	font-size:15px;
-	line-height:20px;
-	text-align:center;
-}
-
-.selection {
-	font-family:"Vollkorn";
-	font-weight:600;
-	font-size:23px;
-	font-style:italic;
-	color:#FFF;
-	text-align:left;
-	line-height:25px;
-	text-transform:uppercase;
-	margin:auto;
-	width:180px;
-	height:180px;
-}
-
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	display: none; 
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content/Box */
 .modal-content {
 	margin:20% auto;
 	background-color: #FFF;
 	border: 3px solid #F2A304;
 	padding-bottom:20px;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 80%;
 }
 
-/* The Close Button */
 .close {
-  color: #FFF;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: #FFF;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 @media only screen and (min-width:768px) {

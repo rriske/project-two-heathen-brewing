@@ -195,10 +195,21 @@ footer {
 	background-color:#000;
 }
 
+.indeximg {
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
 .index {
 	margin:auto;
 	width:85%;
 	background-color:#FFF;
+}
+
+.indeximg p {
+	padding-bottom:20px;
+	width:90%;
 }
 
 .about {
@@ -222,8 +233,9 @@ footer {
 }
 
 .patio {
-	min-width:30%;
-	max-width:70%;
+	min-width:50%;
+	max-width:80%;
+	padding-bottom:20px;
 }
 
 .alt {
@@ -233,7 +245,7 @@ footer {
 	color:#000;
 	font-size:38px;
 	text-align:center;
-	padding-bottom:40px;
+	padding-bottom:20px;
 }
 
 .location {
@@ -431,6 +443,12 @@ footer {
 }
 
 @media only screen and (min-width:768px) {
+	.home {
+		width:100%;
+		margin:auto;
+		grid-gap:5px;
+		padding-top:55px;
+	}
 	.accordion {
 		  background-image: url(../images/lightgrain.png);
 		  color: #FFF;
@@ -495,6 +513,15 @@ footer {
 }
 
 @media only screen and (min-width:1024px) {
+	.home {
+		display:grid;
+		width:90%;
+		grid-template-columns:1fr 1fr;
+		margin:auto;
+		grid-gap:5px;
+		padding-top:55px;
+	}
+
 	.accordion {
 		  background-image: url(../images/lightgrain.png);
 		  color: #FFF;
@@ -564,6 +591,15 @@ footer {
 }
 
 @media only screen and (min-width:1200px) {
+	.home {
+		display:grid;
+		width:85%;
+		grid-template-columns:1fr 1fr;
+		margin:auto;
+		grid-gap:5px;
+		padding-top:55px;
+	}
+
 	.accordion {
 		  background-image: url(../images/lightgrain.png);
 		  color: #FFF;

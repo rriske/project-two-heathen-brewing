@@ -299,10 +299,6 @@ footer {
 	padding:15px 5px;
 }
 
-.active, .accordion:hover {
-  color:#F2A304;
-}
-
 .panel {
  	padding: 25px 18px;
  	background-color: white;
@@ -465,6 +461,14 @@ footer {
 		  text-transform:uppercase;
 	}
 
+	.accordion:hover {
+ 		 color:#F2A304;
+ 		 font-family:"Vollkorn";
+		 font-weight:700;
+		 font-size:25px;
+		 text-transform:uppercase;
+ 	}
+
 	.tap {
 		width:85%;
 		margin:auto;
@@ -537,6 +541,14 @@ footer {
 		  font-size:30px;
 		  text-transform:uppercase;
 	}
+
+	.accordion:hover {
+ 		 color:#F2A304;
+ 		 font-family:"Vollkorn";
+		 font-weight:700;
+		 font-size:30px;
+		 text-transform:uppercase;
+ 	}
 
 	.tap {
 		width:85%;
@@ -614,6 +626,14 @@ footer {
 		  font-weight:700;
 		  font-size:35px;
 		  text-transform:uppercase;
+	}
+
+	.accordion:hover {
+ 		 color:#F2A304;
+ 		 font-family:"Vollkorn";
+		 font-weight:700;
+		 font-size:35px;
+		 text-transform:uppercase;
 	}
 
 	.tap {

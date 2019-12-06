@@ -161,6 +161,40 @@ footer {
 	padding:20px 0;
 }
 
+/*Landing page*/
+.background {
+	background-image:url(../images/lightgrain.png);
+	background-repeat:repeat;
+	background:cover;
+}
+
+.logoscene {
+	margin:auto;
+	min-width:60%;
+	max-width:80%;
+}
+
+.head {
+	width:80%;
+	margin:auto;
+	padding-top:50px;
+}
+
+#scene {
+	margin:auto;
+}
+
+#scene h1 {
+	font-family:"Vollkorn";
+	font-weight:900;
+	font-size:72px;
+	text-align:center;
+	color:#FFF;
+	padding-top:45px;
+	padding-bottom:45px;
+	margin:auto;
+}
+
 /*Navigation for all pages*/
 #navbar a:hover {
 	font-family:"Vollkorn";

@@ -12,19 +12,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="background">
-	<div id="scene">
-		<div data-depth="0.7">
+	<div class="scene">
 			<h1>Heathen Brewing</h1>
 		</div>
-		<div data-depth="0.6" class="head">
-			<img src="images/heathen-tiki.png" class="logoscene">
-		</div>
+			<div class="scene">
+		<form action="home.html">
+			<button>Enter the den</button>
+		</form>
 	</div>
+	<div class="scene">
+			<a href="home.html"><img src="images/heathen-tiki.png" class="logoscene"></a>
+		</div>
 </body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-	<script src="scripts/parallax.js"></script>
-	<script>
-	var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
-</script>
 </html>

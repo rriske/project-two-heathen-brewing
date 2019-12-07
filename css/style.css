@@ -168,31 +168,52 @@ footer {
 	background:cover;
 }
 
+@keyframes head{
+	from {
+		width:75%;
+		transform:rotate(0deg);
+	}
+	to {
+		width:100%;
+		transform:rotate(30deg);
+	}
+
+}
+
 .logoscene {
 	margin:auto;
-	min-width:60%;
-	max-width:80%;
+	text-align:center;
+	animation-name:head;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-delay:.75s;
 }
 
-.head {
+.scene {
 	width:80%;
 	margin:auto;
-	padding-top:50px;
+	text-align:center;
+	padding-left:30px;
+	padding-right:30px;
 }
 
-#scene {
-	margin:auto;
-}
-
-#scene h1 {
+.scene h1 {
 	font-family:"Vollkorn";
 	font-weight:900;
 	font-size:72px;
 	text-align:center;
 	color:#FFF;
-	padding-top:45px;
+	padding-top:80px;
 	padding-bottom:45px;
 	margin:auto;
+}
+
+.landing {
+	padding-top:200px;
+	margin:auto;
+	width:60%;
+	text-align:center;
 }
 
 /*Navigation for all pages*/
@@ -252,7 +273,6 @@ footer {
 	padding-bottom:45px;
 	width:80%;
 	margin:auto;
-	background-color:#FFF;
 }
 
 .logo {
